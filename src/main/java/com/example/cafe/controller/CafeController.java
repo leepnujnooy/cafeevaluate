@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class CafeController {
 
-    @RequestMapping("/")
-    public String login(){
+    @GetMapping("/login")
+    public String goLoginPage(){
         return "index";
     }
 
