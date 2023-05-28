@@ -7,16 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class CafeController {
 
-    @GetMapping("/login")
+    @RequestMapping("/")
     public String login(){
         return "index";
     }
-
-    @GetMapping("/list")
-    public String cafeList(){
-        return "cafelist";
-    }//카페 리스트 페이지 매핑
-
 
 
 
