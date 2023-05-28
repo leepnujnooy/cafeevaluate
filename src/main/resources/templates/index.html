@@ -23,7 +23,7 @@
         <div class="masthead">
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">얼평 말고 카평</h1>
+                    <h1 class="fst-italic lh-1 mb-4">얼평 말고 카페</h1>
                     <p class="mb-5">관악구에 거주하는 분들을 위한 카페 평가 커뮤니티 입니다.</p>
                     <!-- * * * * * * * * * * * * * * *-->
                     <!-- * * SB Forms Contact Form * *-->
@@ -35,9 +35,13 @@
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div> <div class="row input-group-newsletter">
+                            <div class="col"><input class="form-control" id="password" type="email" placeholder="Enter email password..." aria-label="Enter password ..." data-sb-validations="required,email" /></div>
                         </div>
+                            <div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submit" type="submit">회원가입</button></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submit" type="submit">로그인하기</button></div>
+                            </div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
                         <!-- Submit success message-->
