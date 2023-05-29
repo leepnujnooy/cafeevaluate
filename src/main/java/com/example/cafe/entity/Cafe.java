@@ -5,10 +5,13 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
-@Table(name = "cafe_gwanak")
+@Table(name = "cafe")
 public class Cafe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,5 +37,8 @@ public class Cafe {
 
     @Column
     private String address_common;
+
+    @OneToMany(mappedBy = "cafe", fetch = FetchType.EAGER)
+    private List<Comment> commentList = new ArrayList<>();
 
 }
