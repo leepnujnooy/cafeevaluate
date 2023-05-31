@@ -25,36 +25,40 @@
                 <div class="container-fluid px-4 px-lg-0">
                     <h1 class="fst-italic lh-1 mb-4">카페 평가 APP</h1>
                     <p class="mb-5">관악구에 거주하는 분들을 위한 카페 평가 커뮤니티 입니다.</p>
-                    <form>
+
+
+
+
+
+
+
+
+
+
+                    <form action="/login/isUser" method="post">
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div> <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="password" type="password" placeholder="Enter email password..." aria-label="Enter password ..." data-sb-validations="required,password" /></div>
+                            <div class="col"><input class="form-control" name="email" type="text" placeholder="Enter email address..." /></div> <div class="row input-group-newsletter">
+                            <div class="col"><input class="form-control" name="password" type="text" placeholder="Enter email password..." /></div>
                         </div>
                             <div>
-                                <div class="col-auto"><a th:href="@{/signup}"><button class="btn btn-primary disabled">회원가입</button></a></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submit" type="submit">로그인하기</button></div>
+                                <div class="col-auto"><a th:href="@{/signup}"><button class="btn btn-primary disabled">회원가입 페이지 이동</button></a></div>
+                                <div class="col-auto"><button>로그인하기</button></div>
                             </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">안녕</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
 
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
                         </div>
                     </form>
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>

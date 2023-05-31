@@ -15,7 +15,7 @@ public class Comment {
     private Integer id;
 
     @Column
-    private String comment_content;
+    private String content;
 
 
     @ManyToOne
