@@ -16,11 +16,9 @@ import java.time.LocalDateTime;
 public class CafeDTO {
     private Integer id;
     private String name;
-    private LocalDateTime start_at;
-    private String is_open;
-    private String is_closed;
     private String category;
-    private String address_doro;
+    private LocalDateTime start_at;
     private String address_common;
+    private String address_doro;
 }
 

@@ -21,22 +21,17 @@ public class Cafe {
     private String name;
 
     @Column
-    private Integer start_at;
-
-    @Column
-    private String is_open;
-
-    @Column
-    private String is_closed;
-
-    @Column
     private String category;
 
     @Column
-    private String address_doro;
+    private Integer start_at;
+
 
     @Column
     private String address_common;
+
+    @Column
+    private String address_doro;
 
     @OneToMany(mappedBy = "cafe", fetch = FetchType.EAGER)
     private List<Comment> commentList = new ArrayList<>();

@@ -16,6 +16,7 @@ public class UserDTO {
 
     public static UserDTO convertUserToDTO(User user){
         UserDTO userDTO = new UserDTO();
+        userDTO.setId(user.getId());
         userDTO.setEmail(user.getEmail());
         userDTO.setPassword(user.getPassword());
         userDTO.setNickname(user.getNickname());
